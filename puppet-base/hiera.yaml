@@ -1,0 +1,8 @@
+---
+version: 5
+defaults:
+  data_hash: yaml_data
+  datadir: /etc/puppetlabs/puppet/hiera.yaml
+hierarchy:
+ - name: "Devops Data"
+   path: "/etc/puppetlabs/puppet/hieradata/%{service}.yaml"
