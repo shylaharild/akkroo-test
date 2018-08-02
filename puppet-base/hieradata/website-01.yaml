@@ -1,0 +1,17 @@
+---
+associate_public_ip: 'true'
+availability_zone: 'us-east-1b'
+disk_size: '10'
+fqdn: 'website01'
+host_name: 'website01'
+instance_type: 't2.micro'
+provider: 'aws'
+region: 'us-east-1'
+security_groups: [ 'sg-43214b25' ] #add the sg id here with necessary ports opened
+service : 'website01'
+subnet_id: 'subnet-693fca1f' #valid subnet in the given availability zone
+tags: {
+    Name: 'WEBSITE-01',
+    Project: 'DevOps',
+    Purpose: 'Akkroo Test'
+}
